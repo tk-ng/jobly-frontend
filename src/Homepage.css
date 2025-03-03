@@ -1,0 +1,9 @@
+.Homepage {
+	align-items: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: calc(100vh - 150px);
+	text-shadow: 2px 2px 5px #34302f;
+}
