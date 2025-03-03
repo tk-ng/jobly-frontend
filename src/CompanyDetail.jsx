@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { JoblyApi } from "./api";
 import { JobCardList } from "./JobCardList";
+import { Navigate } from "react-router";
 import "./CompanyDetail.css";
 
 export const CompanyDetail = () => {
@@ -16,6 +17,7 @@ export const CompanyDetail = () => {
 					setCompany(company);
 				} catch (err) {
 					console.error(err);
+					return <Navigate to="/companies" />;
 				}
 			}
 			getCompany();
